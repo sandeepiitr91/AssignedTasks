@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- start data_ng_app my_app -->
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8">
+<title>DashBoard Angular</title>
+<link href="style/mycss.css" rel="stylesheet">
+<link href="style/bootstrap.min.css" rel="stylesheet">
+
+
+<script src="script/jquery.js"></script>
+<!--<script scrc="js\angular\lib\angular.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+
+<script type="text/javascript" src="controller\model\db.js"></script>
+<script src="controller\model\app.js"></script>
+<script type="text/javascript" src="controller\database.js"></script>
+<script src="controller\social-request-controller.js"></script>
+
+</head>
+<!-- start data_ng_controller DashboardController and initialise limit value with 10 -->
+<body>
+	<div ng-controller="DashboardController">
+		<!-- start container_fluid which contains all controls  -->
+			<div ng-app="myApp">
+				 <div id="header1">
+				   	<h1> Database Dashboard </h1>
+				   		<hr width="100%" size="15%" color="gray">
+				 	</div style=>
+				 	<table id="t01">
+				   <tbody> 
+					<tr>
+						<td><a onClick="show(1)" href="#">Description Details of Nuclear Test Events</a></td>
+					  </tr>
+					 <tr>
+					   <td><a onClick="show(2)" href="#">Description Details of Nuclear Test Events</a></td>
+					 </tr>
+					 <tr>
+					   <td><a onClick="show(3)" href="#">Description Details of Nuclear Test Events Test-SITE Wise</a></td>
+					 </tr>
+					 <tr>
+					   <td><a onClick="show(4)" href="#">Details of Nuclear Test Event TEST-SITE Wise</a></td>
+					 </tr>
+					 <tr>
+					   <td><a onClick="show(5)" href="#">Details of Nuclear Test Event TEST-Event Wise</a></td>
+					 </tr>
+					 <tr>
+					   <td><a onClick="show(6)" href="#">Details of Nuclear Test Event TEST-Events</a></td>
+					 </tr>
+				   </tbody>                                  
+					 </table>
+					 <div>
+						<div id="table1">
+							<table id="t01">
+								<tbody> 
+								<tr ng-repeat="x in language">
+								   <td><a> {{x}} </a></td>
+								 </tr>
+								</tbody>
+							 </table>	
+					</div>
+					 </div>
+									  
+					 <div>
+						<div id="table2">
+							<table id="t01">
+								<tbody> 
+								<tr ng-repeat="x in city">
+								   <td><a> {{x}} </a></td>
+								 </tr>
+								</tbody>
+							 </table>	
+						</div> 
+					 </div>
+						
+					 <div>
+						<div id="table3">
+							<table id="t01">
+								<tbody> 
+								<tr ng-repeat="x in fruit">
+								   <td><a> {{x}} </a></td>
+								 </tr>
+								</tbody>
+							 </table>	
+						</div>
+					 </div>
+								 
+				</div>
+			</div>
+	</div>
+</body>	
+	<!-- end fourth row -->
+<!-- end data_ng_controller DashboardController -->
+</html>
+<!-- end data_ng_app my_app -->
